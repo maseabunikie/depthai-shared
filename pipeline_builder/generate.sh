@@ -17,11 +17,13 @@ if [[ -d generated ]]; then
     rm -r generated
 fi
 
-# Prepare clean folder
-mkdir -p generated/depthai-shared/generated
+# Prepare clean folders
+mkdir -p generated/depthai-shared/cpp
+mkdir -p generated/depthai-shared/python
 
 # Create a list of files to generate
 list=`echo global/Global.properties.schema.json nodes/*/*.properties.schema.json common/ProcessorType.schema.json schema/Pipeline.schema.json`
 
 # Generate sources
-quicktype --namespace dai::gen --member-style camel-case --code-format with-struct --source-style multi-source --include-location global-include -s schema -l c++ -o "generated/depthai-shared/generated/PipelineBuilderGenerated.hpp" $list
+quicktype --namespace dai::gen --member-style camel-case --code-format with-struct --source-style multi-source --include-location global-include -s schema -l c++ -o "generated/depthai-shared/cpp/PipelineBuilderGenerated.hpp" $list
+quicktype . -o generated/depthai-shared/python/types.py
