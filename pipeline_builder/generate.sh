@@ -26,4 +26,4 @@ list=`echo global/Global.properties.schema.json nodes/*/*.properties.schema.json
 
 # Generate sources
 quicktype --namespace dai::gen --member-style camel-case --code-format with-struct --source-style multi-source --include-location global-include -s schema -l c++ -o "generated/depthai-shared/cpp/PipelineBuilderGenerated.hpp" $list
-quicktype . -o generated/depthai-shared/python/types.py
+quicktype --lang python --src-lang schema --python-version 3.7 -o generated/depthai-shared/python/types.py $list
