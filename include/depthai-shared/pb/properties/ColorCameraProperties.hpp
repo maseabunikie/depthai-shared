@@ -91,6 +91,12 @@ struct ColorCameraProperties {
      * Whether to keep aspect ratio of input (video size) or not
      */
     bool previewKeepAspectRatio = true;
+
+    /**
+     * Enable outputting `preview`, `still`, `video` post-processed streams
+     */
+    bool enablePreviewStillVideoStreams = true;
+
 };
 
 NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(ColorCameraProperties,
@@ -109,6 +115,7 @@ NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(ColorCameraProperties,
                                    sensorCropX,
                                    sensorCropY,
                                    inputConfigSync,
-                                   previewKeepAspectRatio);
+                                   previewKeepAspectRatio,
+                                   enablePreviewStillVideoStreams);
 
 }  // namespace dai
