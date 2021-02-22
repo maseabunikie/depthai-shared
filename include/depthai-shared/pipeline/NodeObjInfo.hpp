@@ -13,6 +13,6 @@ struct NodeObjInfo {
     std::unordered_map<std::string, NodeIoInfo> ioInfo;
 };
 
-NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(NodeObjInfo, id, name, properties, ioInfo);
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(NodeObjInfo, id, name, properties, ioInfo)
 
 }  // namespace dai

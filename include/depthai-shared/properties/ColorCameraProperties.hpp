@@ -125,6 +125,6 @@ NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(ColorCameraProperties,
                                    sensorCropX,
                                    sensorCropY,
                                    inputConfigSync,
-                                   previewKeepAspectRatio);
+                                   previewKeepAspectRatio)
 
 }  // namespace dai

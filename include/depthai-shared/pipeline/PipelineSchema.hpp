@@ -26,6 +26,6 @@ struct PipelineSchema {
     std::unordered_map<int64_t, NodeObjInfo> nodes;
 };
 
-NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(PipelineSchema, connections, globalProperties, nodes);
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(PipelineSchema, connections, globalProperties, nodes)
 
 }  // namespace dai

@@ -17,6 +17,6 @@ struct SystemLoggerProperties {
     float rateHz = 1.0f;
 };
 
-NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(SystemLoggerProperties, rateHz);
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(SystemLoggerProperties, rateHz)
 
 }  // namespace dai

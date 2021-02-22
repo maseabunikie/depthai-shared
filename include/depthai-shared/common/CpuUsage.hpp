@@ -16,6 +16,6 @@ struct CpuUsage {
     int32_t msTime;
 };
 
-NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(CpuUsage, average, msTime);
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(CpuUsage, average, msTime)
 
 }  // namespace dai

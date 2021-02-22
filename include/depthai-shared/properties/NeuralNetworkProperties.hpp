@@ -31,6 +31,6 @@ struct NeuralNetworkProperties {
     std::uint32_t numNCEPerThread = 0;
 };
 
-NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(NeuralNetworkProperties, blobSize, blobUri, numFrames, numThreads, numNCEPerThread);
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(NeuralNetworkProperties, blobSize, blobUri, numFrames, numThreads, numNCEPerThread)
 
 }  // namespace dai

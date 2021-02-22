@@ -22,6 +22,6 @@ struct ChipTemperature {
     float average;
 };
 
-NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(ChipTemperature, css, mss, upa, dss, average);
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(ChipTemperature, css, mss, upa, dss, average)
 
 }  // namespace dai

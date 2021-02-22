@@ -24,6 +24,6 @@ struct XLinkOutProperties {
     bool metadataOnly = false;
 };
 
-NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(XLinkOutProperties, maxFpsLimit, streamName, metadataOnly);
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(XLinkOutProperties, maxFpsLimit, streamName, metadataOnly)
 
 }  // namespace dai

@@ -15,6 +15,6 @@ struct MemoryInfo {
     int64_t total;
 };
 
-NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(MemoryInfo, remaining, used, total);
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(MemoryInfo, remaining, used, total)
 
 }  // namespace dai

@@ -21,6 +21,6 @@ struct LogMessage {
     std::string payload;
 };
 
-NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(LogMessage, nodeIdName, level, time, colorRangeStart, colorRangeEnd, payload);
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(LogMessage, nodeIdName, level, time, colorRangeStart, colorRangeEnd, payload)
 
 }  // namespace dai

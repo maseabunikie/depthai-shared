@@ -13,6 +13,6 @@ struct NodeIoInfo {
     int queueSize = 8;
 };
 
-NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(NodeIoInfo, name, type, blocking, queueSize);
+NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE(NodeIoInfo, name, type, blocking, queueSize)
 
 }  // namespace dai
